@@ -23,7 +23,7 @@ function TodoInput() {
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Add a new todo"
       />
-      <img src={checkmark} onClick={handleAddTodo} />
+      <img src={checkmark} alt="checkmark" onClick={handleAddTodo} />
     </div>
   );
 }
