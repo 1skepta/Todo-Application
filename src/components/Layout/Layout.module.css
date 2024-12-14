@@ -1,0 +1,29 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  padding: 0;
+  margin: 0;
+}
+.backgroundHeader {
+  background-image: url("../../assets//images/bg-mobile-light.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header h1 {
+  margin: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 80%;
+  height: 180px;
+  align-items: center;
+}
