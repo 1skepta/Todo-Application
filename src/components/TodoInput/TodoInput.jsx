@@ -14,14 +14,17 @@ function TodoInput() {
   };
 
   return (
-    <div className="flex gap-2">
+    <div className="">
       <input
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Add a new todo"
-        className="p-2 border rounded"
+        className=""
       />
+      <button className="" onClick={handleAddTodo}>
+        Add
+      </button>
     </div>
   );
 }
