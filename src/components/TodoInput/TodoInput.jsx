@@ -14,17 +14,14 @@ function TodoInput() {
   };
 
   return (
-    <div className="">
+    <div>
       <input
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Add a new todo"
-        className=""
       />
-      <button className="" onClick={handleAddTodo}>
-        Add
-      </button>
+      <button onClick={handleAddTodo}>Add</button>
     </div>
   );
 }
