@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { toggleTodo, editTodo, deleteTodo } from "../../store/todoSlice";
+import styles from "./TodoItem.module.css";
+import del from "../../assets/images/icon-cross.svg";
+import edit from "../../assets/images/edit-button-svgrepo-com.svg";
+import check from "../../assets/images/icon-check.svg";
 
 function TodoItem({ todo }) {
   const dispatch = useDispatch();
@@ -15,7 +19,7 @@ function TodoItem({ todo }) {
   };
 
   return (
-    <li>
+    <li className={styles.item}>
       <input
         type="checkbox"
         checked={todo.completed}
@@ -30,8 +34,16 @@ function TodoItem({ todo }) {
       ) : (
         <span>{todo.title}</span>
       )}
-      <button onClick={handleEdit}>{isEditing ? "Save" : "Edit"}</button>
-      <button onClick={() => dispatch(deleteTodo(todo.id))}>Delete</button>
+      <img
+        className={styles.editing}
+        src={isEditing ? check : edit}
+        onClick={handleEdit}
+      />
+      <img
+        src={del}
+        alt="delete button"
+        onClick={() => dispatch(deleteTodo(todo.id))}
+      />
     </li>
   );
 }

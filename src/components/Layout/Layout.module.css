@@ -3,6 +3,7 @@
   height: 100vh;
   padding: 0;
   margin: 0;
+  background-color: #fafafa;
 }
 .backgroundHeader {
   background-image: url("../../assets//images/bg-mobile-light.jpg");
@@ -26,4 +27,7 @@
   align-items: center;
   height: 150px;
   margin-top: 40px;
+}
+.content {
+  padding: 0 30px;
 }

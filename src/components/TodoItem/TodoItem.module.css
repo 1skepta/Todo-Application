@@ -1,0 +1,11 @@
+.item {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.editing {
+  width: 20px;
+  height: auto;
+  background-color: red;
+}

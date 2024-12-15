@@ -14,7 +14,7 @@ function Layout() {
         </div>
         <TodoInput />
       </div>
-      <div>
+      <div className={styles.content}>
         <TodoList />
       </div>
     </div>
