@@ -7,8 +7,7 @@
   display: flex;
   align-items: center;
   height: 45px;
-  background-color: white;
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #ccc; */
   margin-top: -25px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -18,13 +17,6 @@
   width: 21px;
   height: auto;
   margin-right: 10px;
-}
-.done {
-  background: linear-gradient(to bottom, #6abdff, violet);
-  border-radius: 50%;
-  width: 15px;
-  padding: 5px;
-  height: 15px;
 }
 .item div {
   padding: 0 10px;

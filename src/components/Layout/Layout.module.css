@@ -3,10 +3,9 @@
   height: 100vh;
   padding: 0;
   margin: 0;
-  background-color: #fafafa;
 }
 .backgroundHeader {
-  background-image: url("../../assets//images/bg-mobile-light.jpg");
+  /* background-image: url("../../assets//images/bg-mobile-light.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { toggleTodo, editTodo, deleteTodo } from "../../store/todoSlice";
 import styles from "./TodoItem.module.css";
 import del from "../../assets/images/close.svg";
@@ -10,6 +10,11 @@ function TodoItem({ todo }) {
   const dispatch = useDispatch();
   const [isEditing, setIsEditing] = useState(false);
   const [newTitle, setNewTitle] = useState(todo.title);
+  const theme = useSelector((state) => state.theme.theme);
+
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
 
   const handleEdit = () => {
     if (isEditing && newTitle.trim()) {
@@ -19,7 +24,15 @@ function TodoItem({ todo }) {
   };
 
   return (
-    <li className={styles.item}>
+    <li
+      className={styles.item}
+      style={{
+        backgroundColor: theme === "light" ? "white" : "#25273c",
+        color: theme === "light" ? "black" : "white",
+        borderBottom:
+          theme === "light" ? "1px solid #ccc" : "1px solid #666666",
+      }}
+    >
       <div>
         <input
           type="checkbox"
