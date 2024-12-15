@@ -43,11 +43,13 @@ function TodoItem({ todo }) {
         )}
       </div>
       <div className={styles.second}>
-        <img
-          className={styles.editing}
-          src={isEditing ? check : edit}
-          onClick={handleEdit}
-        />
+        {!todo.completed && (
+          <img
+            className={styles.editing}
+            src={isEditing ? check : edit}
+            onClick={handleEdit}
+          />
+        )}
         <img
           className={styles.close}
           src={del}

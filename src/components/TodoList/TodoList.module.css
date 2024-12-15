@@ -1,8 +1,15 @@
 .box {
-  width: 100%;
+  background-color: white;
   border-radius: 5px;
 }
 .box ul {
   padding: 0;
   margin: 0;
+}
+.operations {
+  display: flex;
+  justify-content: space-between;
+  color: #a19f9f;
+  font-size: 0.9rem;
+  padding: 0 10px;
 }
