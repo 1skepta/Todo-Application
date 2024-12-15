@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { toggleTodo, editTodo, deleteTodo } from "../../store/todoSlice";
 import styles from "./TodoItem.module.css";
-import del from "../../assets/images/icon-cross.svg";
-import edit from "../../assets/images/edit-button-svgrepo-com.svg";
-import check from "../../assets/images/icon-check.svg";
+import del from "../../assets/images/close.svg";
+import edit from "../../assets/images/edit.svg";
+import check from "../../assets/images/chekmark.svg";
 
 function TodoItem({ todo }) {
   const dispatch = useDispatch();
@@ -29,21 +29,23 @@ function TodoItem({ todo }) {
         />
         {isEditing ? (
           <input
+            className={styles.editBox}
             type="text"
             value={newTitle}
             onChange={(e) => setNewTitle(e.target.value)}
           />
         ) : (
-          <span>{todo.title}</span>
+          <span className={styles.editBox}>{todo.title}</span>
         )}
       </div>
-      <div>
+      <div className={styles.second}>
         <img
           className={styles.editing}
           src={isEditing ? check : edit}
           onClick={handleEdit}
         />
         <img
+          className={styles.close}
           src={del}
           alt="delete button"
           onClick={() => dispatch(deleteTodo(todo.id))}

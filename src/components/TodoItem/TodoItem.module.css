@@ -14,11 +14,9 @@
   margin-bottom: 25px;
 }
 .editing {
-  background: linear-gradient(to bottom, #6abdff, violet);
-  border-radius: 50%;
-  width: 15px;
-  padding: 5px;
-  height: 15px;
+  width: 21px;
+  height: auto;
+  margin-right: 10px;
 }
 .done {
   background: linear-gradient(to bottom, #6abdff, violet);
@@ -29,10 +27,23 @@
 }
 .item div {
   padding: 0 10px;
+  display: flex;
+  align-items: center;
 }
 .checkmark {
   margin-right: 20px;
 }
-.editing {
-  margin-right: 15px;
+.close {
+  width: 21px;
+  height: auto;
+}
+.editBox {
+  font-size: 1.2rem;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.second {
+  width: 50px;
 }
