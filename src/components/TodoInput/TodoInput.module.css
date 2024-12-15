@@ -24,3 +24,9 @@
   height: 15px;
   margin-right: 5px;
 }
+
+@media (min-width: 1024px) {
+  .box input {
+    margin-left: 10px;
+  }
+}

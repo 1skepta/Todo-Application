@@ -17,6 +17,7 @@
 }
 .header h1 {
   margin: 0;
+  cursor: none;
 }
 .header {
   display: flex;
@@ -29,4 +30,10 @@
 }
 .content {
   padding: 0 30px;
+}
+
+@media (min-width: 1024px) {
+  .backgroundHeader {
+    padding: 0 385px;
+  }
 }

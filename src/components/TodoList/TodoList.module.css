@@ -12,3 +12,9 @@
   font-size: 0.9rem;
   padding: 0 10px;
 }
+
+@media (min-width: 1024px) {
+  .box {
+    margin: 0 350px;
+  }
+}

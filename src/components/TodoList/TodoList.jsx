@@ -28,6 +28,7 @@ function TodoList() {
           ""
         ) : (
           <p
+            style={{ cursor: "pointer" }}
             onClick={() => {
               dispatch(clearCompleted());
             }}

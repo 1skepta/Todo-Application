@@ -42,6 +42,10 @@ function TodoItem({ todo }) {
         />
         {isEditing ? (
           <input
+            style={{
+              backgroundColor: theme === "light" ? "white" : "#25273c",
+              color: theme === "light" ? "black" : "white",
+            }}
             className={styles.editBox}
             type="text"
             value={newTitle}

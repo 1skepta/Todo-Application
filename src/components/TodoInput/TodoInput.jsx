@@ -35,7 +35,12 @@ function TodoInput() {
           color: theme === "light" ? "black" : "white",
         }}
       />
-      <img src={checkmark} alt="checkmark" onClick={handleAddTodo} />
+      <img
+        src={checkmark}
+        alt="checkmark"
+        onClick={handleAddTodo}
+        style={{ cursor: "pointer" }}
+      />
     </div>
   );
 }

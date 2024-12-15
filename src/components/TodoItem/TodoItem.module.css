@@ -17,6 +17,7 @@
   width: 21px;
   height: auto;
   margin-right: 10px;
+  cursor: pointer;
 }
 .item div {
   padding: 0 10px;
@@ -25,10 +26,12 @@
 }
 .checkmark {
   margin-right: 20px;
+  cursor: pointer;
 }
 .close {
   width: 21px;
   height: auto;
+  cursor: pointer;
 }
 .editBox {
   font-size: 1.2rem;
@@ -36,6 +39,7 @@
   padding: 0;
   margin: 0;
   border: none;
+  cursor: default;
 }
 .second {
   width: 50px;
