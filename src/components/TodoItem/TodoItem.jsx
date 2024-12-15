@@ -20,30 +20,35 @@ function TodoItem({ todo }) {
 
   return (
     <li className={styles.item}>
-      <input
-        type="checkbox"
-        checked={todo.completed}
-        onChange={() => dispatch(toggleTodo(todo.id))}
-      />
-      {isEditing ? (
+      <div>
         <input
-          type="text"
-          value={newTitle}
-          onChange={(e) => setNewTitle(e.target.value)}
+          type="checkbox"
+          checked={todo.completed}
+          onChange={() => dispatch(toggleTodo(todo.id))}
+          className={styles.checkmark}
         />
-      ) : (
-        <span>{todo.title}</span>
-      )}
-      <img
-        className={styles.editing}
-        src={isEditing ? check : edit}
-        onClick={handleEdit}
-      />
-      <img
-        src={del}
-        alt="delete button"
-        onClick={() => dispatch(deleteTodo(todo.id))}
-      />
+        {isEditing ? (
+          <input
+            type="text"
+            value={newTitle}
+            onChange={(e) => setNewTitle(e.target.value)}
+          />
+        ) : (
+          <span>{todo.title}</span>
+        )}
+      </div>
+      <div>
+        <img
+          className={styles.editing}
+          src={isEditing ? check : edit}
+          onClick={handleEdit}
+        />
+        <img
+          src={del}
+          alt="delete button"
+          onClick={() => dispatch(deleteTodo(todo.id))}
+        />
+      </div>
     </li>
   );
 }
