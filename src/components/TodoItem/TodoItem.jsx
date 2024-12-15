@@ -35,7 +35,11 @@ function TodoItem({ todo }) {
             onChange={(e) => setNewTitle(e.target.value)}
           />
         ) : (
-          <span className={styles.editBox}>{todo.title}</span>
+          <span
+            className={todo.completed ? styles.strikethrough : styles.editBox}
+          >
+            {todo.title}
+          </span>
         )}
       </div>
       <div className={styles.second}>

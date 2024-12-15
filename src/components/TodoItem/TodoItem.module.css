@@ -8,7 +8,7 @@
   align-items: center;
   height: 45px;
   background-color: white;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
   margin-top: -25px;
   border-radius: 5px;
   margin-bottom: 25px;
@@ -46,4 +46,13 @@
 }
 .second {
   width: 50px;
+}
+.strikethrough {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: #ccc;
 }
