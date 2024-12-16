@@ -142,27 +142,27 @@ npm test
 
 Contributions are welcome! To contribute:
 
-### **1. Fork this repository**
+**1. Fork this repository**
 
-### **2. Create a new branch for your feature or bug fix:**
+**2. Create a new branch for your feature or bug fix:**
 
 ```bash
 git checkout -b feature-name
 ```
 
-### **3. Commit your changes:**
+**3. Commit your changes:**
 
 ```bash
 git commit -m "Description of feature"
 ```
 
-### **4. Push to your branch:**
+**4. Push to your branch:**
 
 ```bash
 git push origin feature-name
 ```
 
-### **5. Submit a pull request.**
+**5. Submit a pull request.**
 
 ---
 
