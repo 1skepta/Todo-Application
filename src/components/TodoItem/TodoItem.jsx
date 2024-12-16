@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTodo, editTodo, deleteTodo } from "../../store/todoSlice";
 import styles from "./TodoItem.module.css";
-import del from "../../assets/images/close.svg";
-import edit from "../../assets/images/edit.svg";
-import check from "../../assets/images/chekmark.svg";
+import { FaTimes, FaCheck, FaEdit } from "react-icons/fa";
 
 function TodoItem({ todo }) {
   const dispatch = useDispatch();
@@ -60,17 +58,14 @@ function TodoItem({ todo }) {
         )}
       </div>
       <div className={styles.second}>
-        {!todo.completed && (
-          <img
-            className={styles.editing}
-            src={isEditing ? check : edit}
-            onClick={handleEdit}
-          />
-        )}
-        <img
+        {!todo.completed &&
+          (isEditing ? (
+            <FaCheck onClick={handleEdit} className={styles.editing} />
+          ) : (
+            <FaEdit onClick={handleEdit} className={styles.editing} />
+          ))}
+        <FaTimes
           className={styles.close}
-          src={del}
-          alt="delete button"
           onClick={() => dispatch(deleteTodo(todo.id))}
         />
       </div>

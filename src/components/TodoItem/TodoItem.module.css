@@ -16,7 +16,7 @@
 .editing {
   width: 21px;
   height: auto;
-  margin-right: 10px;
+  margin-right: 8px;
   cursor: pointer;
 }
 .item div {
@@ -43,6 +43,8 @@
 }
 .second {
   width: 50px;
+  display: flex;
+  align-items: center;
 }
 .strikethrough {
   font-size: 1.2rem;
@@ -52,4 +54,5 @@
   margin: 0;
   border: none;
   color: #ccc;
+  cursor: default;
 }
