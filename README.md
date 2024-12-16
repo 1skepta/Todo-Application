@@ -13,7 +13,7 @@ A scalable and interactive Todo application built with React.js, Redux, and Redu
 - **Toggle Status:** Mark tasks as complete or incomplete using a checkbox.
 - **Dark/Light Mode:** Switch between dark and light UI themes for better accessibility.
 - **State Persistence:** Todos are saved in the browser's local storage using Redux Persist, ensuring data remains intact even after refreshing the page.
-- **Responsive Design:** Fully mobile-friendly and responsive UI designed with TailwindCSS.
+- **Responsive Design:** Fully mobile-friendly and responsive UI designed with Vanilla CSS.
 
 ---
 
