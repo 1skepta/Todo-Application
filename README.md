@@ -59,7 +59,7 @@ npm install
 or
 
 ```bash
-yarn
+yarn install
 ```
 
 ### **4. Start the Development Server**
@@ -97,3 +97,89 @@ The optimized app will be availabl in the build/ directory.
 ---
 
 ## **Application Workflow**
+
+### **1. Adding Todos**
+
+- User inputs a task in the TodoInput Component
+- On submission, the task is dispatched to Redux and added to the global state.
+
+### **2. Viewing Todos**
+
+- Tasks are displayed using the TodoList and TodoItem components.
+- Each item shows the task title and status.
+
+### **3. Editing Todos**
+
+- Clicking the "Edit" button allows the user to modify the task title.
+- Changes are saved to the Redux state.
+
+### **4. Deleting Todos**
+
+- Clicking the "Delete" button removes the task from the Redux state.
+
+### **5. Dark/Light Mode**
+
+- A toggle button in the header allows switching themes.
+- The theme is saved in local storage for persistence.
+
+### **6. Persisting State**
+
+- Redux Persist saves the global state in the browser's local storage, ensuring that todos remain intact even after refreshing the page.
+
+---
+
+## **Running Tests**
+
+To run test for the application:
+
+```bash
+npm test
+```
+
+---
+
+## **Contributing**
+
+Contributions are welcome! To contribute:
+
+### **1. Fork this repository**
+
+### **2. Create a new branch for your feature or bug fix:**
+
+```bash
+git checkout -b feature-name
+```
+
+### **3. Commit your changes:**
+
+```bash
+git commit -m "Description of feature"
+```
+
+### **4. Push to your branch:**
+
+```bash
+git push origin feature-name
+```
+
+### **5. Submit a pull request.**
+
+---
+
+## **Known Issues**
+
+- Todos do not sync across devices.
+
+---
+
+## **License**
+
+## This project is licensed under [MIT LICENSE](LICENSE).
+
+---
+
+## **Author**
+
+**Skepta**
+
+- Github: @1skepta
