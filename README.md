@@ -174,7 +174,7 @@ git push origin feature-name
 
 ## **License**
 
-## This project is licensed under [MIT LICENSE](LICENSE).
+This project is licensed under [MIT LICENSE](LICENSE).
 
 ---
 
@@ -182,4 +182,4 @@ git push origin feature-name
 
 **Skepta**
 
-- Github: @1skepta
+- Github: [@1skepta](https://github.com/1skepta)
