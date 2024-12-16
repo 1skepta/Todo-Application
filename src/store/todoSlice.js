@@ -32,7 +32,7 @@ const todoSlice = createSlice({
     deleteTodo: (state, action) => {
       state.todos = state.todos.filter((todo) => todo.id !== action.payload);
     },
-    clearCompleted: (state, action) => {
+    clearCompleted: (state) => {
       state.todos = state.todos.filter((todo) => !todo.completed);
     },
   },
