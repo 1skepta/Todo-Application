@@ -19,7 +19,7 @@ A scalable and interactive Todo application built with React.js, Redux, and Redu
 
 ## **Live Demo**
 
-Demo link will be here once deployed
+[Live Link](https://todo-application-rho-weld.vercel.app/)
 
 ---
 
