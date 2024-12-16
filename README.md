@@ -98,31 +98,31 @@ The optimized app will be availabl in the build/ directory.
 
 ## **Application Workflow**
 
-### **1. Adding Todos**
+**1. Adding Todos**
 
 - User inputs a task in the TodoInput Component
 - On submission, the task is dispatched to Redux and added to the global state.
 
-### **2. Viewing Todos**
+  **2. Viewing Todos**
 
 - Tasks are displayed using the TodoList and TodoItem components.
 - Each item shows the task title and status.
 
-### **3. Editing Todos**
+  **3. Editing Todos**
 
 - Clicking the "Edit" button allows the user to modify the task title.
 - Changes are saved to the Redux state.
 
-### **4. Deleting Todos**
+  **4. Deleting Todos**
 
 - Clicking the "Delete" button removes the task from the Redux state.
 
-### **5. Dark/Light Mode**
+  **5. Dark/Light Mode**
 
 - A toggle button in the header allows switching themes.
 - The theme is saved in local storage for persistence.
 
-### **6. Persisting State**
+  **6. Persisting State**
 
 - Redux Persist saves the global state in the browser's local storage, ensuring that todos remain intact even after refreshing the page.
 
